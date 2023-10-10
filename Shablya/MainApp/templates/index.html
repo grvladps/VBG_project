@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shablya</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Логотип та назва проекту -->
+            <div>
+                <img src="{% static 'images/logo.png' %}" alt="Логотип">
+            </div>
+            <div>
+                <span>Головна</span>
+                <span>Пошук</span>
+                <span>Про нас</span>
+            </div>
+            <div>
+                <a href="{% url 'cabinet' %}" style="text-decoration: none;">Особистий кабінет користувача</a>
+            </div>
+        </header>
+        <div class="spacer"></div> <!-- Доданий блок-відступ -->
+        <div class="content">
+            <div class="first-part">
+            </div>
+            <div class="divider"></div>
+            <div class="second-part">
+            </div>
+        </div>
+        <footer>
+            <!-- Футер -->
+        </footer>
+    </div>
+</body>
+</html>
